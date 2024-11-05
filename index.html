@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-2xl font-bold mb-4">Temperature Converter</h1>
+        <input type="number" id="inputTemp" placeholder="Enter Temperature" class="mb-4 p-2 border rounded w-full">
+        <select id="inputUnit" class="mb-4 p-2 border rounded w-full">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="R">Reamur</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <button onclick="convertTemp()" class="bg-blue-500 text-white p-2 rounded w-full">Convert</button>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <script src="converter.js"></script>
+</body>
+</html>
